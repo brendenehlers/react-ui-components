@@ -1,0 +1,26 @@
+.Input {
+  --hoverColor: rgb(74, 74, 244, 0.5);
+  --focusColor: rgb(74, 74, 244, 1);
+
+  & input {
+    padding: 0.5rem 0.7rem;
+    border: none;
+    border-radius: 5px;
+    appearance: none;
+    letter-spacing: 1px;
+
+    will-change: box-shadow;
+    transition: box-shadow 350ms;
+
+    &:hover {
+      box-shadow: inset var(--hoverColor) 0 0 0 2px;
+      transition: box-shadow 100ms;
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0;
+      box-shadow: inset var(--focusColor) 0 0 0 2px;
+    }
+  }
+}

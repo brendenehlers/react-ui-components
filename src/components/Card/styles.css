@@ -1,0 +1,31 @@
+.card {
+  display: grid;
+  grid-template-rows: 1fr, 5fr, 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "content" "footer";
+  gap: 0.3rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2),
+    1.7px 1.7px 2.1px rgba(0, 0, 0, 0.049),
+    3.8px 3.8px 5.4px rgba(0, 0, 0, 0.062),
+    6.9px 6.9px 11.1px rgba(0, 0, 0, 0.069),
+    12.9px 12.9px 23.8px rgba(0, 0, 0, 0.08), 40px 40px 80px rgba(0, 0, 0, 0.11);
+  background-color: white;
+
+  & header {
+    grid-area: header;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  & main {
+    grid-area: content;
+  }
+
+  & footer {
+    grid-area: footer;
+    color: grey;
+    opacity: 0.75;
+  }
+}
