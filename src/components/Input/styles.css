@@ -20,7 +20,7 @@
     &:focus {
       outline: 0;
       box-shadow: 0;
-      box-shadow: inset var(--focusColor) 0 0 0 2px;
+      box-shadow: inset var(--focusColor) 0 0 0 3px;
     }
   }
 }
