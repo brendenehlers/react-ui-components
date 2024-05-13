@@ -1,7 +1,4 @@
 .Input {
-  --hoverColor: rgb(74, 74, 244, 0.5);
-  --focusColor: rgb(74, 74, 244, 1);
-
   & input {
     padding: 0.5rem 0.7rem;
     border: none;

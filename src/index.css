@@ -1,3 +1,10 @@
+:root {
+  --hoverColor: rgb(74, 74, 244, 0.5);
+  --focusColor: rgb(74, 74, 244, 1);
+
+  --borderRadius: 5px;
+}
+
 body {
   background-color: #f3f3f3;
 }

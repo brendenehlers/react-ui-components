@@ -1,0 +1,59 @@
+.button {
+  position: relative;
+
+  &::before {
+    background-color: lightgrey;
+    border-radius: var(--borderRadius);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 6px;
+    left: 0;
+    z-index: -1;
+
+    will-change: background-color;
+    transition: background-color 350ms;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    &::before {
+      background-color: var(--hoverColor);
+      transition: background-color 100ms;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: var(--focusColor);
+      transition: background-color 100ms;
+    }
+  }
+
+  & .content {
+    outline: none;
+    border: none;
+    background-color: white;
+    padding: 1rem 0.5rem;
+    border-radius: var(--borderRadius);
+    width: 100%;
+    height: 100%;
+
+    will-change: box-shadow transform;
+    transition: box-shadow 350ms;
+  }
+
+  &:hover .content {
+    cursor: pointer;
+    box-shadow: inset var(--hoverColor) 0 0 0 2px;
+    transition: box-shadow 100ms;
+  }
+
+  &:active .content {
+    transform: translateY(4px);
+    transition: transform 50ms;
+    box-shadow: inset var(--focusColor) 0 0 0 2px;
+  }
+}

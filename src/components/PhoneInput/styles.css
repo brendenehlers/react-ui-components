@@ -1,7 +1,4 @@
 .PhoneInput {
-  --hoverColor: rgb(74, 74, 244, 0.5);
-  --focusColor: rgb(74, 74, 244, 1);
-
   & .content {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -18,7 +15,7 @@
         background-color: var(--hoverColor);
         transition: background-color 100ms;
 
-        & + input {
+        &+input {
           box-shadow: inset var(--hoverColor) 0 0 0 2px;
           transition: box-shadow 100ms;
         }
@@ -32,7 +29,7 @@
         background-color: var(--focusColor);
         transition: background-color 100ms;
 
-        & + input {
+        &+input {
           outline: 0;
           box-shadow: 0;
           box-shadow: inset var(--focusColor) 0 0 0 3px;
